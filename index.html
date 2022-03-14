@@ -10,22 +10,28 @@
 </head>
 
 <body>
-  <form id="login-form">
-    <input required maxlength="10" placeholder="What is your name?">
-    <input type="submit" value="login">
-  </form>
-  <h2 id="clock"></h2>
-  <h1 class="hidden" id="greeting"></h1>
-  <form id="todo-form">
-    <input type="text" placeholder="Write To-do And Press Enter." style="width:300px">
-  </form>
-  <ul id="todo-list">
-  </ul>
-  <div id="quote">
+  <div id="weather">
     <span></span>
     <span></span>
   </div>
-  <div id="weather">
+  <div class="contents">
+    <h2 id="clock"></h2>
+    <div class="hello">
+      <form id="login-form">
+        <input required maxlength="10" placeholder="What is your name?">
+        <input type="submit" value="login">
+      </form>
+      <h1 class="hidden" id="greeting"></h1>
+    </div>
+    <div class="todo">
+      <form id="todo-form">
+        <input type="text" placeholder="Write To-do And Press Enter." style="width:300px">
+      </form>
+      <ul id="todo-list">
+      </ul>
+    </div>
+  </div>
+  <div id="quote">
     <span></span>
     <span></span>
   </div>
