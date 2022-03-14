@@ -5,9 +5,9 @@ const greeting = document.querySelector("#greeting");
 const HIDDEN = "hidden";
 
 function onLoginBtnClick(event) {
-  event.preventDefault();
   const userName = loginFormInput.value;
   localStorage.setItem("userName", userName);
+  savedUserName = localStorage.getItem("userName");
   printGreeting();
 }
 
@@ -16,7 +16,7 @@ function printGreeting() {
   greeting.innerText = `Hello! ${savedUserName}`;
   greeting.classList.remove(HIDDEN);
 }
-if (savedUserName) {
+if (savedUserName !== null ) {
   printGreeting();
 } else {
   loginForm.addEventListener("submit", onLoginBtnClick)
